@@ -8,3 +8,10 @@ extensions:
     ignore:
       - node_modules
       - .git
+
+request:
+  variables:
+    - name: api_url_local
+      value: http://localhost:8000
+    - name: access_token
+      value: ""

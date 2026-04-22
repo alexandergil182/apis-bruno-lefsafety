@@ -1,0 +1,20 @@
+info:
+  name: Desactivar Usuario
+  type: http
+  seq: 10
+
+http:
+  method: DELETE
+  url: "{{api_url_local}}/v1/api/auth/usuarios/550e8400-e29b-41d4-a716-446655440000/"
+  body:
+    type: none
+  auth:
+    type: bearer
+    bearer:
+      token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

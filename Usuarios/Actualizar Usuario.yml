@@ -1,0 +1,21 @@
+info:
+  name: Actualizar Usuario
+  type: http
+  seq: 9
+
+http:
+  method: PATCH
+  url: "{{api_url_local}}/v1/api/auth/usuarios/550e8400-e29b-41d4-a716-446655440000/"
+  body:
+    type: json
+    data: "{\"rol\": \"ABOGADO\", \"is_active\": true}"
+  auth:
+    type: bearer
+    bearer:
+      token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

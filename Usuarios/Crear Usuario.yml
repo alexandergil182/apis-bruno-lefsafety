@@ -1,0 +1,21 @@
+info:
+  name: Crear Usuario
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{api_url_local}}/v1/api/auth/usuarios/"
+  body:
+    type: json
+    data: "{\"email\": \"abogado@lexsafety.com\", \"nombre\": \"Juan\", \"apellido\": \"Perez\", \"rol\": \"ABOGADO\", \"password\": \"password123\", \"password_confirm\": \"password123\"}"
+  auth:
+    type: bearer
+    bearer:
+      token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{api_url_local}}/v1/api/auth/login/"
+  body:
+    type: json
+    data: "{\"email\": \"admin@lexsafety.com\", \"password\": \"mipassword123\"}"
+  auth: none
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

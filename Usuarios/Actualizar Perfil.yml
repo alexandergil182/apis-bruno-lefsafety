@@ -1,0 +1,21 @@
+info:
+  name: Actualizar Perfil
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{api_url_local}}/v1/api/auth/me/"
+  body:
+    type: json
+    data: "{\"nombre\": \"Alexander\", \"apellido\": \"Gil\"}"
+  auth:
+    type: bearer
+    bearer:
+      token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
