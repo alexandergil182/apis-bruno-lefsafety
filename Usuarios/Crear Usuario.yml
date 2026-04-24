@@ -8,11 +8,20 @@ http:
   url: "{{api_url_local}}/v1/api/auth/usuarios/"
   body:
     type: json
-    data: "{\"email\": \"abogado@lexsafety.com\", \"nombre\": \"Juan\", \"apellido\": \"Perez\", \"rol\": \"ABOGADO\", \"password\": \"password123\", \"password_confirm\": \"password123\"}"
+    data: |-
+      {
+        
+       "email": "a@lexsafety.com", 
+       "nombre": "Alexander", 
+       "apellido": "Gil Tafur", 
+       "rol": "ABOGADO", 
+       "password": "luciana2017", 
+       "password_confirm": "luciana2017"
+
+      }
   auth:
     type: bearer
-    bearer:
-      token: "{{access_token}}"
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

@@ -6,12 +6,9 @@ info:
 http:
   method: GET
   url: "{{api_url_local}}/v1/api/auth/usuarios/"
-  body:
-    type: none
   auth:
     type: bearer
-    bearer:
-      token: "{{access_token}}"
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

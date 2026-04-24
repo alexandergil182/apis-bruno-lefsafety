@@ -2,5 +2,5 @@ name: Dev
 variables:
   - name: api_url_local
     value: http://localhost:8000
-  - name: access_token
-    value: ""
+  - name: token
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc3MDM2MzY5LCJpYXQiOjE3NzY5NDk5NjksImp0aSI6ImMwNjFhOGQ0ODNiOTRiODZhY2ZlNWE0N2Y3MDY4ZmEzIiwidXNlcl9pZCI6ImU2NmJkNzQ3LWY1MjAtNDNjMi04OTYzLTQ5Njk3ODc1ZTM0NSIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwibm9tYnJlIjoiYWRtaW4gYWRtaW4iLCJyb2wiOiJBU0lTVEVOVEUifQ.klqewHQMpN-BgY9l7ApQj9gQP2fivdr2mkCBJbzo3M8

@@ -1,11 +1,11 @@
 info:
-  name: Me
+  name: Listar Roles
   type: http
-  seq: 4
+  seq: 11
 
 http:
   method: GET
-  url: "{{api_url_local}}/v1/api/auth/me/"
+  url: "{{api_url_local}}/v1/api/auth/roles/"
   auth:
     type: bearer
     token: "{{token}}"
