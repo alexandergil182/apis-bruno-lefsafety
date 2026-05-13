@@ -11,10 +11,10 @@ http:
     data: |-
       {
         
-       "email": "a@lexsafety.com", 
-       "nombre": "Alexander", 
-       "apellido": "Gil Tafur", 
-       "rol": "ABOGADO", 
+       "email": "epalau@gmail.com", 
+       "nombre": "Eduardo", 
+       "apellido": "Palau", 
+       "rol": "ASISTENTE", 
        "password": "luciana2017", 
        "password_confirm": "luciana2017"
 

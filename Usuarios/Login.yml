@@ -8,7 +8,7 @@ http:
   url: "{{api_url_local}}/v1/api/auth/login/"
   body:
     type: json
-    data: '{"email": "admin@admin.com", "password": "admin"}'
+    data: '{"email": "epalau@gmail.com", "password": "luciana2017"}'
 
 settings:
   encodeUrl: true

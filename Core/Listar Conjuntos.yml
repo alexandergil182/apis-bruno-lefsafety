@@ -1,0 +1,17 @@
+info:
+  name: Listar Conjuntos
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{api_url_local}}/v1/api/conjuntos/"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

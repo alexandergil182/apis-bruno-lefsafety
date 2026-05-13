@@ -1,0 +1,31 @@
+info:
+  name: Crear Conjunto
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{api_url_local}}/v1/api/conjuntos/"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Conjunto Residencial El Mirador", 
+        "direccion": "Calle 123 # 45-67", 
+        "telefono": "6011234567", 
+        "email": "mirador@conjunto.com", 
+        "nit": "900123456-1", 
+        "numero_cuenta": "1234567890", 
+        "tipo_cuenta": "Ahorros", 
+        "banco": "Bancolombia", 
+        "administradores": ["ca0e17b1-86f8-47ad-9d20-61221773e7c2"]
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

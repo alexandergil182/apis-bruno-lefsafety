@@ -1,0 +1,20 @@
+info:
+  name: Desactivar Conjunto
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{api_url_local}}/v1/api/conjuntos/1/"
+  body:
+    type: none
+  auth:
+    type: bearer
+    bearer:
+      token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

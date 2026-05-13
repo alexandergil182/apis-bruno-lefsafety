@@ -1,0 +1,21 @@
+info:
+  name: Editar Conjunto
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{api_url_local}}/v1/api/conjuntos/1/"
+  body:
+    type: json
+    data: "{\"nombre\": \"Conjunto Residencial El Mirador\", \"telefono\": \"6019876543\", \"administradores\": []}"
+  auth:
+    type: bearer
+    bearer:
+      token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
